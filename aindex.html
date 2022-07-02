@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Style the search field */
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+   background-color: #e82929 ;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  color: black;
+}
+
+.topnav a.active {
+  color: white;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 5px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: 1;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text] {
+    float: none;
+    display: none;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+
+  .form-control {
+      border-radius: 2;
+  }
+
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Account</a>
+  <a href="#">Dashboard</a>
+     <a href="#">Update</a>
+    <a href="#">Logout</a>
+ 
+</div>
+
+<div id="main">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; &nbsp<b>Carstore.com </b></span>
+
+<div class="topnav">
+  <a class="active" href="#home">Dashboard</a>
+  <a href="#about">Notifications</a>
+
+  <div class="search-container">
+    <form class="form-control mr-2">
+      <input type="text" placeholder="Search.." name="search">
+      <img  src="baseline-search-24px.svg">&nbsp&nbsp
+    </form>
+  </div>
+</div>
+
+<h2>Home</h2>
+ <h3>Customer</h3> <div class="table-responsive">          
+						<table class="table">
+							<thead>
+								<tr>
+									<th>CustomerID</th>
+									<th>Firstname</th>
+									<th>Lastname</th>
+									<th>Address</th>
+									<th>E-mail ID</th>
+									<th>Contact</th>
+									<th>Order ID</th>
+								</tr>
+							</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>Charles</td>
+								<td>Bass</td>
+								<td>123, Street,Hyd,95</td>
+								<td>charlesbass@gmail.com</td>
+								<td>9874664552</td>
+								<td>1234_JHGF</td>
+							</tr>
+							
+							<tr>
+								<td>2</td>
+								<td>Damon</td>
+								<td>Salvatore</td>
+								<td>564,Colony,Hyd,Tel,96</td>
+								<td>damonsalvatore@gmail.com</td>
+								<td>9257788552</td>
+								<td>1664_JHAA</td>
+							</tr>
+							
+							<tr>
+								<td>3</td>
+								<td>Jeremy</td>
+								<td>Gilbert</td>
+								<td>23/6-23,Apt,Colony,Sec,87</td>
+								<td>gilbertjeremy@ymail.com</td>
+								<td>8784664552</td>
+								<td>5344_ERGF</td>
+							</tr>
+							
+							<tr>
+								<td>4</td>
+								<td>Max</td>
+								<td>Black</td>
+								<td>C2-213,Apt,Nagar,JDM,98</td>
+								<td>maxblack@gmail.com</td>
+								<td>977664552</td>
+								<td>1235_SFGH</td>
+							</tr>
+							
+							<tr>
+								<td>5</td>
+								<td>Zachary</td>
+								<td>Price</td>
+								<td>7Y5,34 Street,NY,US,12</td>
+								<td>zacharyzach@gmail.com</td>
+								<td>9533655572</td>
+								<td>2345_SRFF</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			
+
+			<br>
+			<br>
+			<div class="wrapper">
+				<a href="#"><button type="submit" class="btn">Add </button></a>
+				<a href="#"><button type="submit" class="btn">Remove</button></a>
+		</div>
+			<div class="table-responsive">             
+					<h3>cars</h3> <table class="table">
+							<thead>
+								<tr>
+									<th>Car ID</th>
+									<th>Brand</th>
+									<th>Category</th>
+									<th>Price</th>
+									<th>Stock</th>
+								</tr>
+							</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+						<td>Maruti swift</td>
+								<td>new</td>
+								<td>3 lakh</td>
+								<td>100</td>
+
+							</tr>
+							
+							<tr>
+								<td>2</td>
+								<td>tata indica</td>
+								<td>new</td>
+								<td>3 lakh</td>
+								<td>145</td>
+								
+							</tr>
+							
+							<tr>
+								<td>3</td>
+								<td>toyaota</td>
+								<td>new</td>
+						
+								<td>8 lakh</td>
+								<td>30</td>
+								
+							</tr>
+							
+							<tr>
+								<td>4</td>
+								<td>marazzo</td>
+								<td>upcoming</td>
+						
+								<td>10 lakh</td>
+								<td>25</td>
+								
+							</tr>
+							
+						
+						</tbody>
+					</table>
+				</div>
+			</div>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+   
+</body>
+</html> 
